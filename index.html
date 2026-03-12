@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Timer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Study Timer</h1>
+    <div id="container">
+         <h1>Study Timer</h1>
     <div id="timer-section">
         <h2 id="timer-display">25:00</h2>
         <button id="start-btn">Start</button>
         <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
     </div>
     
     <div id="task-sections">
+        <h5>Tasks</h5>
         <input id="task-input" type="text" placeholder="What are you studying?">
         <button id="add-btn">Add</button>
-        <ul id="task-list"></ul>
+        <ul id="task-list">
+            <li><label><input type="checkbox"> Example Task 1</label></li>
+            <li><label><input type="checkbox"> Example Task 2</label></li>
+            <li><label><input type="checkbox"> Example Task 3</label></li>
+
+        </ul>
+    </div>
     </div>
     
     <script src="script.js"></script>

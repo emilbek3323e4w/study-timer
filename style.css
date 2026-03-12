@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'IBM Plex Mono', 'Space Mono', monospace;
+    background-color: #2f2f2f;
+    
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 0.5px solid rgba(214, 214, 214, 0.35);
+    background-color: #3d3d3d;
+    color: rgb(214, 214, 214);
+}
+
+h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+h5 {
+    margin: 10px;
+}
+#timer-section {
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-bottom: 0.5px solid rgb(214, 214, 214);
+    box-sizing: border-box;
+}
+#timer-display {
+    font-family: 'Space Mono', monospace;
+    font-size: 60px;
+    margin: 20px 0;
+    
+}
+
+#task-sections {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: inherit;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#task-sections h5,
+#task-sections #task-list {
+    grid-column: 1 / -1;
+}
+
+#task-input {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid rgba(214, 214, 214, 0.35);
+    border-radius: 8px;
+    background-color: #3d3d3d;
+    color: rgb(214, 214, 214);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(214, 214, 214, 0.35);
+    border-radius: 8px;
+    background-color: #3d3d3d;
+    color: rgb(214, 214, 214);
+    font-family: inherit;
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: #484848;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+#task-list li {
+    padding: 10px;
+    border: 0.5px solid rgba(214, 214, 214, 0.35);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
